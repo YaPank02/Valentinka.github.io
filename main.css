@@ -1,0 +1,46 @@
+body{
+    background-color: #de5dc8;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    font-family: serif, garamond;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+h1{
+    font-family: serif, garamond;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
