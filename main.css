@@ -1,0 +1,223 @@
+body {
+    background-color: #de5dc8;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+h1 {
+    font-family: serif, garamond;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+#phaseOne img#image1 {
+    display: block;
+    margin: 0 auto; 
+    width: 20%;
+}
+
+#phaseTwo img#image2 {
+    display: block;
+    margin: 0 auto; 
+    width: 30%;
+}
+
+#phaseThree img#image3 {
+    display: block;
+    margin: 0 auto; 
+    width: 30%;
+}
+
+#wherePhase img#imageWhere {
+    display: block;
+    margin: 0 auto; 
+    width: 30%;
+}
+
+#phaseFour img#image4 {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+
+#phaseTwo,
+#phaseThree,
+#wherePhase,
+#phaseFour,
+#finalPhase {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for "Where?" phase */
+#wherePhase h2 {
+    font-family: serif, garamond;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Styling for the final phase */
+#finalPhase {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Funny Transitions */
+.whirl-transition {
+    animation: whirl 1.5s ease-in-out forwards;
+}
+
+.carousel-transition {
+    animation: carousel 1.5s ease-in-out forwards;
+}
+
+.sparkle-transition {
+    animation: sparkle 1.5s ease-in-out forwards;
+}
+
+.strike-transition {
+    animation: strike 1.5s ease-in-out forwards;
+}
+
+.clouds-transition {
+    animation: clouds 1.5s ease-in-out forwards;
+}
+
+/* Adjusted whirl animation keyframes */
+@keyframes whirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    /*75% {
+        transform: rotate(540deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    } */
+}
+
+/* Define carousel animation keyframes */
+@keyframes carousel {
+    0% {
+        transform: translateX(-2000px);
+    }
+    /*33% {
+        transform: translateX(-2000px);
+    }
+    66% {
+        transform: translateX(2000px);
+    } */
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Define sparkle animation keyframes */
+@keyframes sparkle {
+    0% {
+        transform: translateX(2000px);
+    }
+    /*33% {
+        transform: translateX(-2000px);
+    }
+    66% {
+        transform: translateX(2000px);
+    } */
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Define strike animation keyframes */
+@keyframes strike {
+    0% {
+        transform: translateY(-2000px);
+    }
+    /*33% {
+        transform: translateY(-2000px);
+    }
+    66% {
+        transform: translateY(2000px);
+    }*/
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Define clouds animation keyframes */
+@keyframes clouds {
+    0% {
+        transform: translateY(2000px);
+    }
+    /*33% {
+        transform: translateY(-2000px);
+    }
+    66% {
+        transform: translateY(2000px);
+    }*/
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body {
+    text-align: center;
+}
+
+h3 {
+    font-family: serif, garamond;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#dragonGif {
+    width: 80%; 
+    max-width: 450px; 
+    height: auto;
+}
+
+#wolfGif {
+    width: 30%; 
+    max-width: 200px; 
+    height: auto;
+}

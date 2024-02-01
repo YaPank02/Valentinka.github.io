@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Valentine Day</title>
+    <style>
+        #audioPlayer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body class="fade-in">
+
+    <!-- Phase 1 - "You?" -->
+    <div id="phaseOne">
+        <h1>You?</h1>
+        <img src="pics/lerasolo.png" id="image1">
+        <div class="button-container">
+            <button id="nextButton">Yes, looks like me, silly</button>
+        </div>
+        <div id="message"></div>
+        
+    </div>
+
+    <!-- Phase 2 - "Me" -->
+    <div id="phaseTwo">
+        <h1>Me?</h1>
+        <img src="pics/meb.jpg" id="image2">
+        <div class="button-container">
+            <button id="nextButton2">Yes, it is you, handsome</button>
+        </div>
+        <div id="message2"></div>
+    </div>
+
+    <!-- Phase 3 - "Us" -->
+    <div id="phaseThree">
+        <h1>Us?</h1>
+        <div class="image-container">
+            <img src="pics/us.jpg" id="image3">
+        </div>
+        <!-- <p>This is sample text.</p> -->
+        <div class="button-container">
+            <button id="nextButton3">Yes, we look good</button>
+        </div>
+    </div>
+
+    <!-- Additional Phase - "Where?" -->
+    <div id="wherePhase">
+        <h1>Where?</h1>
+        <h2>Pussikatu 1, Lahti, 15240</h2>
+        <div class="image-container">
+            <img src="pics/pussi.png" id="imageWhere">
+        </div>
+        <div class="button-container">
+            <button id="nextButtonWhere">I know this place!</button>
+        </div>
+    </div>
+
+    <!-- Phase 4 - "Activities" -->
+    <div id="phaseFour">
+        <h1>List of activities...</h1>
+        <div class="image-container">
+            <img src="pics/melike.jpg" id="image4">
+        </div>
+        <h2>That's what you're going to get... <br>
+            1. Transfer Helsinki-Lahti <br>
+            2. Numerous incredible breakfasts, lunches and dinners from the best chef of Pussikatu street 1 E38 <br>
+            3. Quality pastime of all days <br>
+            4. Smile, laugh, feelings <br>
+            5. Laukininku activity <br>
+        </h2>
+        <div class="button-container">
+            <button id="nextButton4">Consistently incredible service!</button>
+        </div>
+    </div>
+
+    <!-- Final Phase - "My Question" -->
+    <div id="finalPhase">
+        <h1>Question is.. <br>
+            Will you come and be my valentine? <br>
+        </h1>
+        <div class="button-container">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+        <div id="messageFinal"></div>
+        <!-- Add any other content as needed -->
+    </div>
+
+    <audio id="audioPlayer" src="audio/unity.mp3" controls muted id="autoplay" >
+    </audio>
+        <script>
+            window.onload = function() {
+                document.getElementById("autoplay").play();
+            }
+        </script>
+    
+
+    <script src="javas.js"></script>
+
+</body>
+</html>
+
